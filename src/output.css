@@ -337,6 +337,9 @@
   .w-\[180px\] {
     width: 180px;
   }
+  .w-\[200\[px\]\] {
+    width: 200[px];
+  }
   .w-\[200px\] {
     width: 200px;
   }
@@ -802,6 +805,16 @@
       margin: auto;
     }
   }
+  .lg\:mt-2 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 2);
+    }
+  }
+  .lg\:mt-2\.5 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 2.5);
+    }
+  }
   .lg\:mt-\[-10px\] {
     @media (width >= 64rem) {
       margin-top: -10px;
@@ -1177,6 +1190,11 @@
       flex-direction: column;
     }
   }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
+    }
+  }
   .lg\:flex-row-reverse {
     @media (width >= 64rem) {
       flex-direction: row-reverse;
@@ -1220,6 +1238,11 @@
   .lg\:rounded-4xl {
     @media (width >= 64rem) {
       border-radius: var(--radius-4xl);
+    }
+  }
+  .lg\:p-2 {
+    @media (width >= 64rem) {
+      padding: calc(var(--spacing) * 2);
     }
   }
   .lg\:p-2\.5 {
@@ -1302,6 +1325,16 @@
       text-align: right;
     }
   }
+  .lg\:text-\[12px\] {
+    @media (width >= 64rem) {
+      font-size: 12px;
+    }
+  }
+  .lg\:text-\[14px\] {
+    @media (width >= 64rem) {
+      font-size: 14px;
+    }
+  }
   .lg\:text-\[38px\] {
     @media (width >= 64rem) {
       font-size: 38px;
@@ -1310,6 +1343,11 @@
   .lg\:text-\[40px\] {
     @media (width >= 64rem) {
       font-size: 40px;
+    }
+  }
+  .lg\:text-\[14\] {
+    @media (width >= 64rem) {
+      color: 14;
     }
   }
   .lg\:text-\[px\] {
